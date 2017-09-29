@@ -2,3 +2,26 @@
 layout: default
 title: "Michael Westcott Films"
 ---
+
+<div id="main" tabindex="-1" class="mw-content-wrapper mw-content-wrapper-gallery">
+  <div class="container-fluid mw-container-fluid">
+    <div class="row">
+      <ul class="mw-work-gallery">
+        {% for post in site.posts %}
+        <li class="col-lg-4 col-sm-6 mw-work-gallery_item">
+          <a href="{{ post.url }}">
+            <span class="description-container">
+              <span class="description-content-wrapper">
+                <span class="description-content">
+                  <h4 class="description-title">{{ post.title }}</h4>
+                </span>
+              </span>
+            </span>
+            <img class="img-responsive" src="http://via.placeholder.com/600x400" alt=" ">
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
