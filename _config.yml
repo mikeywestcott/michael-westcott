@@ -6,4 +6,6 @@ sass:
 
 include: ["_pages"]
 
-permalink: /:title/
+# permalink: /:title/
+
+# permalink: pretty
