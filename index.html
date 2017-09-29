@@ -8,6 +8,7 @@ title: "Michael Westcott Films"
     <div class="row">
       <ul class="mw-work-gallery">
         {% for post in site.posts %}
+        {% if post.tags contains 'featured' %}
         <li class="col-lg-4 col-sm-6 mw-work-gallery_item">
           <a href="{{ post.url }}">
             <span class="description-container">
@@ -20,6 +21,7 @@ title: "Michael Westcott Films"
             <img class="img-responsive" src="{{ post.thumbnail }}" alt="">
           </a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </div>

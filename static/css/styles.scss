@@ -6,10 +6,6 @@
 @import "components/navigation";
 @import "components/heros";
 
-*, *:before, *:after {
-  outline: 1px solid pink;
-}
-
 /* GLOBAL ____________________*/
 
 *, *:before, *:after {
@@ -332,8 +328,8 @@ img {
 				position: absolute;
 				left: -5px;
 				top: -5px;
-				// background-image: url('../images/icons/icon-sprite.svg');
-				// background-image: url('../images/icons/icon-sprite.png');
+				background-image: url('../images/icons/icon-sprite.svg');
+				background-image: url('../images/icons/icon-sprite.png');
 				background-size: auto;
 				background-repeat: no-repeat;
 				background-position: left -36px;
