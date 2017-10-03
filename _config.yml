@@ -1,7 +1,15 @@
-
-baseurl: /
-
+---
+title: Michael Westcott
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+baseurl: "/"
 sass:
   sass_dir: _scss
-
-include: ["_pages"]
+include:
+- _pages
