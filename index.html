@@ -1,33 +1,49 @@
 ---
-title: Michael Westcott Films
-layout: alt
-description: Michael Westcott offers a raft of filmmaking services; documentaries,
-  promotional / corporate, weddings and music videos. MW Films aims to make films
-  with feeling.
-work: current
+layout: default
 ---
 
-<div id="main" tabindex="-1" class="mw-content-wrapper mw-content-wrapper-gallery">
-  <div class="container-fluid mw-container-fluid">
-    <div class="row">
-      <ul class="mw-work-gallery">
-        {% for post in site.posts %}
-        {% if post.tags contains 'featured' %}
-        <li class="col-lg-4 col-sm-6 mw-work-gallery_item">
-          <a href="{{ post.url }}">
-            <span class="description-container">
-              <span class="description-content-wrapper">
-                <span class="description-content">
-                  <h4 class="description-title">{{ post.title }}</h4>
-                </span>
-              </span>
-            </span>
-            <img class="img-responsive" src="{{ post.thumbnail }}" alt=" ">
-          </a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+<div id="main" tabindex="-1" class="">
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Kieron Scott</h1>
+          <p>Glasgow based UX designer & Front-end developer currently working at Arnold Clark.</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <ul>
+              {% for post in site.posts reversed %}
+              <li class="col-md-6">
+                <a href="{{ post.url }}">
+                  <figure>
+                    <img class="img-responsive" src="{{ post.image }}" alt=" ">
+                    <figcaption>{{ post.title }}</figcaption>
+                  </figure>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+  </section>
+
+  <section>
+
+  </section>
+
 </div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <nav>
+      {% if page.previous.url %}
+        <a class="btn btn-default pull-left" href="{{page.previous.url}}">&larr; Previous</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="btn btn-default pull-right" href="{{page.next.url}}">Next &rarr;</a>
+      {% endif %}
+      </nav>
+    </div>
+  </div>
+</div>
