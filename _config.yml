@@ -11,5 +11,6 @@ collections:
 baseurl: "/"
 sass:
   sass_dir: _scss
+  style: compressed
 include:
 - _pages

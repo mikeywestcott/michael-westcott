@@ -138,11 +138,11 @@
 				padding: 12px 21px;
 			}
 
-			&.current {
+			&.active {
 				font-weight: 600;
 			}
 
-			&.current, &:hover {
+			&.active, &:hover {
 				color: #e74c3c;
 				text-decoration: none;
 			}
